@@ -18,7 +18,7 @@ app.layout = html.Div([
     # Texte explicatif
     html.Div([
         html.P(
-            "Ce graphique montre l'évolution des prix du Bitcoin et de l'Ether. "
+            "Ce graphique montre l'évolution des prix du Bitcoin."
             "Vous pouvez choisir d'afficher la courbe du Bitcoin (en bleu), la moyenne mobile sur 5 points pour le Bitcoin (en rouge), "
             "et/ou la courbe de l'Ether (en vert). Si vous sélectionnez la comparaison, le graphique affichera l'Ether sur l'axe de gauche et le Bitcoin sur l'axe de droite."
         )
@@ -27,9 +27,9 @@ app.layout = html.Div([
     dcc.Checklist(
         id='toggle-traces',
         options=[
-            {'label': 'Afficher le prix BTC', 'value': 'btc'},
+            {'label': 'Overview', 'value': 'btc'},
             {'label': 'Afficher la Moyenne Mobile (5 points)', 'value': 'ma'},
-            {'label': 'Afficher Ether', 'value': 'eth'}
+            {'label': 'Comparaison avec Ether', 'value': 'eth'}
         ],
         # Par défaut, on affiche uniquement les données BTC (prix + MA)
         value=['btc'],
