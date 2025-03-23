@@ -37,7 +37,7 @@ app.layout = html.Div([
     
     # Section du rapport quotidien
     html.H2("Rapport quotidien"),
-    html.Div("Ce rapport présente des indicateurs financiers clés (prix d'ouverture, prix de clôture, volatilité, évolution) "
+    html.Div("Ce rapport présente quelques indicateurs financiers clé "
              "calculés sur la journée.", style={'margin': '10px'}),
     html.Pre(id='daily-report', style={'whiteSpace': 'pre-wrap', 'fontFamily': 'monospace'}),
     
