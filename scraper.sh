@@ -1,9 +1,19 @@
 #!/bin/bash
-# Récupération du contenu HTML de la page
-html=$(curl -s "https://www.coingecko.com/en/coins/bitcoin")
 
-# Extraction du prix du Bitcoin via une regex adaptée à la structure HTML (à adapter si nécessaire)
-price=$(echo "$html" | grep -oP 'data-target="price.price".*?[\d,.]+' | grep -oP '[\d,.]+')
+# Chemin absolu pour le log
+LOGFILE="/home/ubuntu/bitcoin-dashboard/scraper.log"
 
-# Sauvegarde des données avec timestamp dans data.csv
-echo "$(date +'%Y-%m-%d %H:%M:%S'), $price" >> data.csv
+echo "$(date) : Début de l'exécution du scraper" >> $LOGFILE
+
+# Appel à l’API CoinGecko pour récupérer le prix du Bitcoin en USD
+# Utilisation d'un chemin absolu pour curl et grep (les chemins habituels sous Ubuntu)
+price=$(/usr/bin/curl -s "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd" \
+       | /usr/bin/grep -oP '"usd":\K[\d.]+')
+
+echo "$(date) : Prix récupéré = $price" >> $LOGFILE
+
+# Écriture des données dans data.csv (avec chemin absolu)
+echo "$(date +'%Y-%m-%d %H:%M:%S'), $price" >> /home/ubuntu/bitcoin-dashboard/data.csv
+
+echo "$(date) : Fin de l'exécution du scraper" >> $LOGFILE
+

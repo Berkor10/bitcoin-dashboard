@@ -1,0 +1,5 @@
+Rapport du 2025-03-22 :
+- Prix d'ouverture : 84145.0
+- Prix de clôture : 84188.0
+- Volatilité : 102.45
+- Évolution : 0.05 %
