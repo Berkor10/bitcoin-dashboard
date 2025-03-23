@@ -32,7 +32,7 @@ app.layout = html.Div([
             {'label': 'Afficher Ether', 'value': 'eth'}
         ],
         # Par défaut, on affiche uniquement les données BTC (prix + MA)
-        value=['btc', 'ma'],
+        value=['btc'],
         labelStyle={'display': 'inline-block', 'marginRight': '20px'}
     ),
     
