@@ -1,12 +1,5 @@
-Rapport du 2025-03-23 :
-- Prix d'ouverture : 83945.00 $
- 
-- Prix de clôture : 85033.00 $
-
-- Prix minimum : 83705.00 $
-
-- Prix maximum : 85295.00 $
-
-- Volatilité : 393.43
-
-- Évolution : 1.30 %
+Rapport du 2025-03-24 :
+- Prix minimum : 85401.00 USD
+- Prix maximum : 87497.00 USD
+- Évolution (min -> max) : 2.45 %
+- Volatilité : 0.12 %
