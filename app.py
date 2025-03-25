@@ -189,15 +189,15 @@ def update_graph(n, toggle_values):
                 name='BTC (Bitcoin)',
                 line=dict(color='blue')
             ))
-            if 'ma' in toggle_values:
-                df_btc['MA5'] = df_btc['price'].rolling(window=5).mean()
-                fig.add_trace(go.Scatter(
-                    x=df_btc['timestamp'],
-                    y=df_btc['MA5'],
-                    mode='lines',
-                    name='MA5 BTC',
-                    line=dict(color='red')
-                ))
+        if 'ma' in toggle_values:
+            df_btc['MA5'] = df_btc['price'].rolling(window=5).mean()
+            fig.add_trace(go.Scatter(
+                x=df_btc['timestamp'],
+                y=df_btc['MA5'],
+                mode='lines',
+                name='MA5 BTC',
+                line=dict(color='red')
+            ))
         fig.update_layout(
             title="Évolution du prix du Bitcoin",
             xaxis_title="Temps",
