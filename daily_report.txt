@@ -1,5 +1,5 @@
-Rapport du 2025-03-25 :
-- Prix minimum : 87369.00 USD
-- Prix maximum : 87369.00 USD
-- Évolution (min -> max) : 0.00 %
-- Volatilité : nan %
+Rapport du 2025-03-27 :
+- Prix minimum : 85880.00 USD
+- Prix maximum : 87705.00 USD
+- Évolution (min -> max) : 2.13 %
+- Volatilité : 0.11 %
