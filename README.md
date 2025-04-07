@@ -4,6 +4,7 @@
 
 Managing crypto price tracking manually is tedious and error-prone. BTC-ETH Dashboard solves this by offering an automated system that scrapes and collects crypto prices, stores them, and displays everything in a modern, interactive dashboard using Dash.
 You get real-time prices, a BTC→USD converter, volatility analysis, and even daily reports—all automatically updated via cron jobs.
+ps: We made the commits from the VM, so they're marked “Ubuntu” on github, but they were made by both of us.
 
 ## 👨‍💻 Meet the Use Case
 
